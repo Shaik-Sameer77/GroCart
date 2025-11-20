@@ -2,6 +2,10 @@
 
 A full-stack eCommerce grocery platform built with **React + Vite (Frontend)** and **Node.js + Express (Backend)**. It includes user authentication, product listing, shopping cart, secure payments using Stripe, and Cloudinary-based image storage.
 
+## 🌍 Live Deployment
+
+[https://gro-cart-jkre.vercel.app/](https://gro-cart-jkre.vercel.app/)
+
 ---
 
 ## ✨ Features
@@ -44,7 +48,7 @@ grocart/
 ## 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/grocart.git
+git clone https://github.com/Shaik-Sameer77/grocart.git
 cd grocart
 ```
 
@@ -86,7 +90,7 @@ npm run dev
 ```
 
 Backend runs at:
-👉 `http://localhost:8080`
+👉 [http://localhost:8080](http://localhost:8080)
 
 ---
 
@@ -113,7 +117,7 @@ npm run dev
 ```
 
 Frontend runs at:
-👉 `http://localhost:5173`
+👉 [http://localhost:5173](http://localhost:5173)
 
 ---
 
@@ -167,32 +171,33 @@ Frontend runs at:
 1. Create a new Vercel project
 2. Import `/server`
 3. Add environment variables from `.env`
-4. Set **Build command:**
+4. **Build command:**
 
-   ```
-   npm install
-   ```
-5. Set **Start command:**
+```
+npm install
+```
 
-   ```
-   node index.js
-   ```
+5. **Start command:**
 
-### Important
+```
+node index.js
+```
 
-Vercel serverless does not support long-running background tasks by default. If using webhooks (Stripe), configure via Vercel Serverless or use a service like Render/ Railway.
+### ⚠️ Important
+
+Vercel serverless functions may not run background tasks continuously. Webhooks (like Stripe) may require a dedicated host (Render, Railway, etc.).
 
 ---
 
 ## Deploy Frontend on Vercel
 
 1. Import `/client`
-2. Add environment variable `VITE_API_URL` with deployed backend URL
-3. Build command (auto):
+2. Add `VITE_API_URL` pointing to backend deployment URL
+3. **Build command:**
 
-   ```
-   npm run build
-   ```
+```
+npm run build
+```
 
 ---
 
@@ -234,7 +239,3 @@ This project is licensed under the **ISC License**.
 # 👨‍💻 Author
 
 Built with ❤️ by **Shaik Sameer**
-
----
-
-Enjoy building and scaling **GroCart 🚀**
